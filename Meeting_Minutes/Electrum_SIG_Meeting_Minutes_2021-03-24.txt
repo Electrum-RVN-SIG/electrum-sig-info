@@ -1,0 +1,37 @@
+
+Electrum SIG Meeting Minutes 2021-03-24
+=======================================
+
+There was discussion of the priority ranking of things to do
+	1st priority is to create documentation of the current status with instructions for setting up the client and server
+	2nd priority is to support assets
+	3rd is to address any remaining ledger and trezor problems
+
+There was discussion of the currently known remaining ledger and trezor problems
+	Those may be unsolvable (transactions with a large # of inputs or which spend from a transaction with a large # of outputs)
+	For debugging purposes, download the code from Tezor's github. It has a very nice emulator which shows the messages being passed
+
+There was discussion of the ledger-electrum channel
+	Since the same work is ongoing in electrum-sig-working, leger-electrum channel should be locked
+	But we should generate the status/instructions document and post it there as a final message before locking the channel 
+
+It was pointed out that ravencoin.org/ledger and support.ledger.com both need updating because the information there is no longer correct.
+
+itsSticky volunteered to help with the status/instructions documentation
+
+Additional discussion about the large-transaction problems of Ledger and Trezor
+	Similar problems have been reported on other coins/wallets. These problems are not Ravencoin-specific.
+	It would be good to understand them in detail eventually
+	The most practical solution at present is to create a progress spinner to at least inform the user that the wallet has not frozen
+
+We discussed the need for "trusted" Electrum servers hosted and maintained by the Foundation
+	This can be helpful if not enough vounteers run servers
+	It is needed if the community does a Bluewallet mobile wallet
+
+There was discussion of starting to understand the Electrum code better by generating documentation of each py file in the source
+	kraverde will set up Sphinx on github with user guide for how 
+
+There was discussion of where general SIG information should be stored such as the list of Electrum SIG members
+	The SIG github account should contain one repository where various documents and binaries can be stored
+	That repository should have "Gitpages" enabled so that the information can be accessed by a browser at github.io
+
