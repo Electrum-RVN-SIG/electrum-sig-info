@@ -1,0 +1,32 @@
+
+Electrum SIG Meeting Minutes 2021-03-31
+=======================================
+
+There was discussion of whether we should try to use the RavenProject github account for the Electrum SIG code.
+	-We decided that we may provide final versions of the binaries there for distribution at some point in the future
+	-but we felt that using the Electrum-RVN-SIG github account provides more flexibility and less unnecessary centralization
+
+We discussed the electrum-sig-info repository. It will be set up under the Electrum-RVN-SIG github account in order to provide a SIG general information main website at https://electrum-rvn-sig.github.io/electrum-sig-info/
+
+The topic of OSX binary builds was discussed
+	-Electrum builds may suffer the same difficulties currently being experienced by the raven-qt team. The Apple overbearing license terms require that the SDK be used only by the registered developer who downloaded it, and further require that the SDK only be used on Apple hardware.
+	-It was discussed that for bitcoin, multiple devs do it manually to comply with Apple's terms, the results are compared, and a resulting binary is randomly chosen for distribution
+	-For the small dev team at Ravencoin, that method is too labor intensive. 
+	-It was decided that we will not routinely provide OSX binaries. We may do so occastionally in the future.
+
+We discussed that we would like to have an autobuild pipeline on the Electrum github repository using "Actions" similar to what is being set up for raven-qt
+	-we may choose to enable the autobuild only periodically rather than doing a build after every PR merge
+
+Short term priorities were discussed:
+	-publishing an "official" release
+	-adding a "progress bar" during Trezor hardware wallet usage to inform the user that the client is not frozen during large transaction operations
+
+We re-confirmed out intention to set up Sphinx as our source file documention methodology. We will request volunteers to edit every python source file by adding sphinx information to it. That will allow easy automatic builds of complete documentation at any time.
+
+We discussed other tasks for which we will request help from the other Electrum SIG members.
+	-Hans will send a notification to SIG members requesting help defining what the client asset GUI should look like and what asset functionality should be.
+	-Hans will also send a notification to SIG members requesting help evaluating Electron-SLP to see if there are ideas or code we could use. 
+
+
+
+
