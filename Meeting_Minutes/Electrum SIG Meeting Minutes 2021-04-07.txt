@@ -1,0 +1,14 @@
+
+Electrum SIG Meeting Minutes 2021-04-07
+=======================================
+
+Today's meeting was primarily administrative, discussing the various publication and helpdesk communication challenges, and how to best improve them.
+
+It was pointed out that the information at "https://ravencoin.org/ledger" is old and needs to be corrected.
+
+We discussed the fact that the SIG has published new guidelines and instructions for building the client and server, but many users are requesting binaries because they do not have the capability or the time to compile the software themselves.
+	-We discussed the fact that we currently have working Linux and Windows binaries which we could distribute
+	-We do not currently have Mac OSX binaries. There are Apple license legality problems and also none of us have Apple hardware
+	-It was decided that we should at least have a link somewhere in the "github.com/RavenProject" account which links to the latest binaries
+
+
