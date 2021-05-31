@@ -1,0 +1,105 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20210423183501)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (Electrum SIG Meeting Minutes 2021-04-21.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 572 Tm
+12 TL
+()'
+()'
+(Electrum SIG Meeting Minutes 2021-04-21)'
+(=======================================)'
+()'
+(1.  Status of current work - documentation, new version, further tasks)'
+(2.  Discussion: kralverdes addition to electrumx, testcases, further work)'
+(3.  Discussion: more electrumx server, kralverde, hyperpeek need theirs for testing)'
+(    causing trouble on mainnet as they are currently the only ones)'
+(4.  Discussion: Intermittent problem of electrumx with sync so it gets stuck, solutions)'
+(5.  Discussion: Create a new official release "as is" to support 3rd parties)'
+(6.  Offer from RealBokito | assetsexplorer.com to discuss extended metadata     )'
+()'
+()'
+(=========================================================================)'
+()'
+(kralverde completed Electrumx 1st draft to support assets)'
+(        -created a server database for assets)'
+(        -added client-server protocol extension to support assets)'
+(        -maintain an asset index on the node \(might not be necessary\))'
+(        )'
+(It should be possible to view some information on the client, but not yet do anything)'
+()'
+(Need to go back to baseline and add new RVN code)'
+()'
+(We are not pursuing the source documentation project at this time since few volunteers)'
+()'
+(Electrumx is hanging until compacting or resyncing- not sure the cause )'
+(        -wait for other complaints)'
+(        )'
+(We still need to move everything to the SIG github account; still scattered     )'
+()'
+(We need to clean up the client by starting again from base and adding the changes.)'
+()'
+()'
+ET
+endstream
+endobj
+8 0 obj
+1606
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 1
+/MediaBox [ 0 0 792 612 ]
+/Kids [ 6 0 R ]
+>>
+endobj
+xref
+0 9
+0000000000 65535 f 0000000009 00000 n 0000000166 00000 n 0000002122 00000 n 0000000215 00000 n 0000000293 00000 n 0000000364 00000 n 0000000444 00000 n 0000002102 00000 n trailer
+<<
+/Size 9
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+2207
+%%EOF

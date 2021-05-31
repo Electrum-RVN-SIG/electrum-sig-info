@@ -1,0 +1,29 @@
+
+Electrum SIG Meeting Minutes 2021-04-14
+=======================================
+
+1. Status of current work - documentation, further tasks
+2. Discussion: OSX build process - any additions needed?
+3. Discussion: QT upgrades from core wallet, possible / benefits?
+
+At present, the source code documentation sub-project has only 2 volunteers. We need to find ways to increase community engagement
+
+There was a discussion of the fact that the Electrum main repo at github.com/spesmilo/electrum has undergone quite a few updates
+	-RVN should still be supported properly, but it needs to be tested
+	-there are warnings when trying to use BIP39 seed words that "they do not meet Electrum's security standards". This needs to be investigated and the messages removed or modified if appropriate
+	-there may be other changes which we don't want; need to review them and decide
+
+There was a discussion of the features which we might want to put into Electrum which are not in raven-qt core wallet
+	-we discussed more flexible viewing or usage of IPFS data via Electrum than in raven-qt
+	-we discussed the benefits/disadvantages of storing at the client a local database of assets owned by the client
+
+More discussion of the need to involve other volunteers, especially for defining the asset-related GUI and asset functionality
+
+
+
+
+
+
+
+
+

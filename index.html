@@ -38,10 +38,113 @@ div{margin-top:20px; margin-bottom:20px !important;}
     For general information about Ravencoin, please go to <a
       href="https://raven.wiki/">https://raven.wiki/</a><br>
     <br>
-    <hr width="100%" size="2"><u>Latest News</u><br>
+    <hr width="100%" size="2"><b>Latest News:</b><br>
     <br>
-    The Electrum SIG is looking for volunteers with Python and/or Qt
-    knowledge for the following:<br>
+    Electrum client testing help needed!<br>
+    <br>
+    Hello everyone,<br>
+    We need your help to test out electrum ravencoin 0.3.0! This release
+    will allow you to view assets, but NOT send or create them.<br>
+    <br>
+    Github: <a
+      href="https://github.com/kralverde/electrum-ravencoin-utd">https://github.com/kralverde/electrum-ravencoin-utd</a><br>
+    Binaries: <a
+href="https://github.com/kralverde/electrum-ravencoin-utd/releases/tag/v0.3.2">https://github.com/kralverde/electrum-ravencoin-utd/releases/tag/v0.3.2</a><br>
+    <br>
+    Run the wallet on test net by starting the binary from the command
+    line while adding the option --testnet<br>
+    (For example,<br>
+    on OSX: <br>
+    /Applications/Electrum-Ravencoin.app/Contents/MacOS/run_electrum
+    --testnet<br>
+    <br>
+    on Windows portable:<br>
+    C:\Users\user\Downloads\electrum-ravencoin-0.3.0-portable.exe
+    --testnet<br>
+    )<br>
+    <br>
+    When testing we would like you to try out all aspects of the client,
+    but place some emphasis on:<br>
+    * Receiving assets (transferred from asset-supported wallets, or
+    importing watch-only addresses)<br>
+    * Sending normal ravencoin from addresses that also contain assets<br>
+    * Building binaries from scratch<br>
+    * Hardware support (Ledger or Trezor)<br>
+    <br>
+    When finding an error please make an issue on the github page or
+    send a message in #electrum-sig-working including a brief
+    description of the problem, screenshots or log files if applicable,
+    and what version you were using (e.g. pure python, windows portable
+    exe, etc.)<br>
+    <br>
+    Please note that the electrum client is light weight and for "normal
+    usage". If you import an address with lots of transactions (e.g.
+    burn addresses or mining pools) the servers will drop your sync
+    request.<br>
+    <br>
+    If you choose to import youR wallet file, make sure to back it up
+    before hand.<br>
+    <br>
+    If you would like some testnet rvn, ping me for some.<br>
+    <br>
+    If you decide to use this release for mainnet transactions, please
+    understand we are still testing this version. If you really must,
+    send a small amount beforehand.<br>
+    <br>
+    <hr width="100%" size="2">The Ravencoin Electrum Special Interest
+    Group currently develops, maintains, and supports:<br>
+    <ol>
+      <li>The Ravencoin version of the Electrum client/wallet</li>
+      <li>Legder and Trezor hardware wallet support by that client</li>
+      <li>The Ravencoin version of the Electrumx server</li>
+    </ol>
+    Please note that these are <i><b>WORKS IN PROGRESS</b></i>. <br>
+    You are welcome to use any software or other information posted
+    here, but you do so <i><b>AT YOUR OWN RISK</b></i>.<br>
+    <br>
+    The current versions of the software supports the two hardware
+    wallets. <br>
+    The current versions of the Electrum software (both with and without
+    a hardware wallet) support RVN coins as well as viewsing Ravencoin
+    assets. Support for creating or transferring Ravencoin assets is
+    undergoing development, but is not yet available. <br>
+    <br>
+    Most comunications within the Ravencoin Electrum SIG takes place on
+    the Ravencoin Discord server.<br>
+    <ul>
+      <li>Real-time work takes place in the <u>#electrum-sig-working</u>
+        text channel. Anyone can participate,</li>
+      <li>Meetings take place in the <u>#electrum-sig-meetings</u>
+        voice channel on Wednesdays at 20:30 UTC. Anyone can listen to
+        the SIG meetings but only SIG members can speak.</li>
+      <li>Links to presentations are posted in the <u>#electrum-sig-meetings</u>&nbsp;
+
+
+
+        text channel.</li>
+    </ul>
+    <br>
+    For questions or to volunteer to help with the SIG activities,
+    please post in the <u>#electrum-sig-working</u> Discord text
+    channel.<br>
+    Here is an invitation to that channel: <a
+      href="https://discord.gg/f8BDJWfu">https://discord.gg/f8BDJWfu</a><br>
+    <br>
+    To view the most recent version of the Ravencoin Electrum SIG's
+    Status/Instructions FAQ, please check here:<br>
+    <a
+href="https://docs.google.com/document/d/1w0jRCX9fJg3c3BXCGHEIpE_VkJnoxIAG83QwBE-iONI/edit?usp=sharing">https://docs.google.com/document/d/1w0jRCX9fJg3c3BXCGHEIpE_VkJnoxIAG83QwBE-iONI/edit?usp=sharing</a><br>
+    <br>
+    To view the SIG meeting minutes, please check <a
+href="file:///home/mehere/Desktop/Quant_Work/Github_Projects/Electrum-RVN-SIG/electrum-sig-info/Meeting_Minutes/">HERE</a>.<br>
+    <br>
+    The project software undergoing development is hosted at <a
+      href="https://github.com/Electrum-RVN-SIG">https://github.com/Electrum-RVN-SIG</a><br>
+    <br>
+    <hr width="100%" size="2"><u>Documentation Project</u><br>
+    <br>
+    The Electrum SIG is still interested in volunteers for improving the
+    original source code documentation:<br>
     <br>
     <blockquote>1) Work has started on documenting each of the py source
       code files of the Electrum client and Electrumx server so that we
@@ -69,56 +172,7 @@ href="https://docs.google.com/document/d/11fhDwO2n5d6sukPEhu3igELMFKHDABimRi4pvy
       the working channel.<br>
     </blockquote>
     <hr width="100%" size="2"><br>
-    The Ravencoin Electrum Special Interest Group currently develops,
-    maintains, and supports:<br>
-    <ol>
-      <li>The Ravencoin version of the Electrum client/wallet</li>
-      <li>Legder and Trezor hardware wallet support by that client</li>
-      <li>The Ravencoin version of the Electrumx server</li>
-    </ol>
-    Please note that these are <i><b>WORKS IN PROGRESS</b></i>. <br>
-    You are welcome to use any software or other information posted
-    here, but you do so <i><b>AT YOUR OWN RISK</b></i>.<br>
     <br>
-    The current versions of the software supports the two hardware
-    wallets. <br>
-    The current versions of the Electrum software (both with and without
-    a hardware wallet) support only RVN coins. Support for Ravencoin
-    assets is undergoing development, but is not yet available. <br>
-    <br>
-    Most comunications within the Ravencoin Electrum SIG takes place on
-    the Ravencoin Discord server.<br>
-    <ul>
-      <li>Real-time work takes place in the <u>#electrum-sig-working</u>
-        text channel. Anyone can participate,</li>
-      <li>Meetings take place in the <u>#electrum-sig-meetings</u>
-        voice channel on Wednesdays at 20:30 UTC. Anyone can listen to
-        the SIG meetings but only SIG members can speak.</li>
-      <li>Links to presentations are posted in the <u>#electrum-sig-meetings</u>&nbsp;
-
-
-        text channel.</li>
-    </ul>
-    <br>
-    For questions or to volunteer to help with the SIG activities,
-    please post in the <u>#electrum-sig-working</u> Discord text
-    channel.<br>
-    Here is an invitation to that channel: <a
-      href="https://discord.gg/f8BDJWfu">https://discord.gg/f8BDJWfu</a><br>
-    <br>
-    To view the most recent version of the Ravencoin Electrum SIG's
-    Status/Instructions FAQ, please check here:<br>
-    <a
-href="https://docs.google.com/document/d/1w0jRCX9fJg3c3BXCGHEIpE_VkJnoxIAG83QwBE-iONI/edit?usp=sharing">https://docs.google.com/document/d/1w0jRCX9fJg3c3BXCGHEIpE_VkJnoxIAG83QwBE-iONI/edit?usp=sharing</a><br>
-    <br>
-    To view the SIG meeting minutes, please check <a
-      href="Meeting_Minutes/">HERE</a>.<br>
-    <br>
-    To view the SIG membership list and chairmen, please check <a
-      href="Electrum_SIG_Member_List.txt">HERE</a>.<br>
-    <br>
-    The project software undergoing development is hosted at <a
-      href="https://github.com/Electrum-RVN-SIG">https://github.com/Electrum-RVN-SIG</a><br>
     <br>
   </body>
 </html>

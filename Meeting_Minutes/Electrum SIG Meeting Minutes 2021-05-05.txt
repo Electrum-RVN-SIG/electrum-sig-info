@@ -1,0 +1,25 @@
+
+Electrum SIG Meeting Minutes 2021/05/05
+========================================
+
+1.  Current status -- electrum sever syncs assets, testing needed
+2.  Discussion: Put binaries for wallet on electrum-sig repo and link them?
+3.  Asset knowledge required -- tx, signing
+4.  Discussion: Roadmap for functions in new wallet. Show assets first, send etc. later?
+
+-The Electrumx server support for showing assets is basically done.
+
+-Still working on additional calls from the client however.
+
+-There has not yet been any testing of rollbacks
+
+-The Electrum client GUI shows current statys. Calls for history are supported by the server, but not yet in the client GUI
+
+-The current plan is to support only Ledger and Trezor hardware wallets, and remove support for others.
+	-This includes asset support
+
+-Since Ravencoin encodes all asset operations on outputs, the signing mechanism by the Electrumx server is not expected to change relative to what the server currently does
+
+-The Electrumx server now maintains an Asset Database in addition to the Transaction Database. As implemented, all transactions go into Transaction Database, which show zero amount for asset transactions. Therefore the client was receiving notifications of 0-RNV transactions, which confused people. That has been fixed.
+
+

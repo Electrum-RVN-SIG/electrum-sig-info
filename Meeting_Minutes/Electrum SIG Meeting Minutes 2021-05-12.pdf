@@ -1,0 +1,168 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20210514144615)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (Electrum SIG Meeting Minutes 2021-05-12.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 572 Tm
+12 TL
+()'
+(Electrum SIG Meeting Minutes 2021-05-12)'
+(========================================)'
+()'
+(1.  Current status -- electrum sever and client, problem on testnet with some blocks)'
+(2.  Discussion: remaining work needed for a first release)'
+(3.  Test requirements -- what to test and how)'
+()'
+(====)'
+()'
+(-The electrum client now has a server-side asset database in addition to the transaction database)'
+()'
+(-Currently, the client gui supports displaying assets but not acting on them)'
+()'
+(-Most work this week has been on the electrumx server)'
+(        -the server is reverse compatible: the asset-aware server works with the asset-aware client, but also with t)'
+(he old non-asset client)'
+(        -the server/client protocol has been extended with new asset commands. This still needs to be documented)'
+(        -the client can ask the server \(pull\) for asset data; it can also subscribe to data for an asset so that it )'
+(gets pushed)'
+()'
+(-The new server implementation has had to be patched to prevent hang due to some malformed coinbase mining transacti)'
+(ons on testnet)'
+(        -eg: txid=f90dccc9d1b40230b4b6eddcdc543f0cad4a3771e51a7a57dccced959adc563a)'
+(        -rawtransaction: 020000000001010000000000000000000000000000000000000000000000000000000000000000ffffffff)'
+(                        2b03a0d30204345a4b5e686f6e676b6f6e672f7777772e6f6b65782e636f6d2f010000000000000000000000ffff)'
+(ffff)'
+(                        020088526a74000000000000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c69068979)'
+(9962b48bebd836974e8cf9012)'
+(                        0000000000000000000000000000000000000000000000000000000000000000000000000)'
+(        -these transactions burn the coinbase mining reward by failing to provide a destination address)'
+()'
+(-There was some question of Electrum BIP39 and BIP44 support. Electrum supports BIP39. But it uses a custom seed phr)'
+(ase algo \(not BIP44\). )'
+(        -That has always been the case with Electrum)'
+(        -This may be changed later to support BIP44)'
+()'
+(-There is support for the servers to do peering without the need for a peer list. This needs to be tested.)'
+()'
+(-There is currently some concern that there may be memory leaks in the asset support code)'
+(        -This needs additional testing, but so far no leaks have been found)'
+()'
+(-Hardware wallet support)'
+(        -Trezor and Ledger continue to function for RVN. Can send and receive)'
+(        -Asset support still needs work)'
+ET
+endstream
+endobj
+8 0 obj
+2532
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 572 Tm
+12 TL
+(        -Plan to remove support for all other brands of hw wallets)'
+()'
+(-The Electrumx server needs asset index and transaction index)'
+(        -server syncing takes about 5 hours with 1 core & 4GB; has 3GB database)'
+(        -currently, it cannot see details of transactions before 11-5-2018 when assets went live; will fix this late)'
+(r)'
+()'
+(-Currently, there are only 3 Electrumx servers live)'
+(        -we need about another week of testing and patching)'
+(        -after that, we should request the Foundation to help by hosting two servers)'
+()'
+(-Current repository locations:)'
+(        -the Electrumx serves code is on the Electrum-RVN-SIG repository)'
+(        -the electrum client is on the kralverde repo. It will be moved to the SIG repo when it is ready)'
+()'
+(-The sync'ing mechanism of the electrum client has been dramatically changed)'
+(        -originally the client used a file with checkpoints in which there was a checkpoint for every 2016 blocks wi)'
+(th the same difficulty on bitcoin)'
+(        -each checkpoing contained the hash of the last header in that 2016 block chunk plus the difficulty of that )'
+(chunk)'
+(        -previously the client retrieved the headers only after the last checkpoint)'
+()'
+(        -but with Ravencoin Digital Gravity Wave, the difficulty changes with each block)'
+(        -so now there is an 80MB file of headers and difficulty for every block)'
+(        -now the clients all sync all headers beginning with genesis, requesting a max of 2016 headers at a time fro)'
+(m the server)'
+(        -the result is a 210.1MB header database stored by the client. It is 15MB size=ion-disk because it is a spar)'
+(se file.)'
+()'
+()'
+ET
+endstream
+endobj
+11 0 obj
+1731
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 2
+/MediaBox [ 0 0 792 612 ]
+/Kids [ 6 0 R 9 0 R ]
+>>
+endobj
+xref
+0 12
+0000000000 65535 f 0000000009 00000 n 0000000166 00000 n 0000004935 00000 n 0000000215 00000 n 0000000293 00000 n 0000000364 00000 n 0000000444 00000 n 0000003028 00000 n 0000003048 00000 n 0000003129 00000 n 0000004914 00000 n trailer
+<<
+/Size 12
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+5026
+%%EOF

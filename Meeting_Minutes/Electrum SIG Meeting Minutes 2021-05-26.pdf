@@ -1,0 +1,142 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20210526161701)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (Electrum SIG Meeting Minutes 2021-05-26.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 572 Tm
+12 TL
+()'
+(Electrum SIG meeting Agenda 2021/05/26)'
+(========================================)'
+()'
+(1.  Current status -- electrum sever and client)'
+(2.  Discussion: rare random server crashes)'
+(3.  Discussion: features in wallet, e.g. send-from for coin-control)'
+(4.  Discussion: use issue tracker on SIG for feature / bugs?)'
+()'
+(###############################################################)'
+()'
+(-The Electrum-Ravencoin client v0.3.0 is ready for community testing)'
+(        -This release will allow you to view assets, but NOT send or create them.)'
+(        -Github: https://github.com/kralverde/electrum-ravencoin-utd)'
+(        -Binaries: https://github.com/kralverde/electrum-ravencoin-utd/releases/tag/v0.3.1)'
+()'
+(-Electrum client has a way to freeze coins but no coin control)'
+(        -a "send from" feature would be nice- will be investigated)'
+(        -Assets have "send from asset" when right-clicked, but not yet implemented)'
+()'
+(The server crash problem related to peering appears to be resolved)'
+(        -the base Kyupichan repo made changes apparently to fix this, which have been copied)'
+(        -Hyperpeek reported that his server has been running without crashes; he is currently serving 23 clients        )'
+()'
+(        -The error messages previously hidden by task grouping now output properly in case of a crash)'
+()'
+(The "Advanced Transaction Option" in Electrum has been set at 40 bytes to prevent outputs like the Op_Return which w)'
+(as generated with a 256-byte data field)'
+()'
+(Trezor support is currently not working on new version)'
+(        -it appears that the Ledger and Trezor support code may not have been copied. This will be investigated)'
+(        -Getting Ledger to show asset name is not possible currently without firmware change)'
+(        -same for Trezor but easier since open source)'
+()'
+(There was some frustrating difficulty in building binaries for the client for Windows and Mac)'
+(        -Windows required an older version of Python \(or a certain version of Visual Studios to be installed for som)'
+(e reason\))'
+(        -Mac required an older version of Qt)'
+(        -the Docker scripts for building have been updated to implement all these requirements, and should function )'
+(as written)'
+(        -the easiest way for testing is to just use the provided binaries)'
+()'
+(The client GUI can be a bit laggy while syncing, as the old version was also, so be a bit patient during syncing)'
+(After syncing is done, the new client is much faster than the previous version)'
+()'
+ET
+endstream
+endobj
+8 0 obj
+2591
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 572 Tm
+12 TL
+(The Moontree SIG should now have everything they need from Electrum to make progress \(except of course asset creatio)'
+(n/sending\))'
+()'
+()'
+ET
+endstream
+endobj
+11 0 obj
+184
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 2
+/MediaBox [ 0 0 792 612 ]
+/Kids [ 6 0 R 9 0 R ]
+>>
+endobj
+xref
+0 12
+0000000000 65535 f 0000000009 00000 n 0000000166 00000 n 0000003446 00000 n 0000000215 00000 n 0000000293 00000 n 0000000364 00000 n 0000000444 00000 n 0000003087 00000 n 0000003107 00000 n 0000003188 00000 n 0000003426 00000 n trailer
+<<
+/Size 12
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+3537
+%%EOF

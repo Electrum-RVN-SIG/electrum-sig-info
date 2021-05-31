@@ -1,0 +1,156 @@
+%PDF-1.1
+1 0 obj
+<<
+/CreationDate (D:20210525124534)
+/Producer (text2pdf v1.1 (\251 Phil Smith, 1996))
+/Title (Electrum SIG Meeting Minutes 2021-05-19.txt)
+>>
+endobj
+2 0 obj
+<<
+/Type /Catalog
+/Pages 3 0 R
+>>
+endobj
+4 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Courier
+>>
+endobj
+5 0 obj
+<<
+  /Font << /F1 4 0 R >>
+  /ProcSet [ /PDF /Text ]
+>>
+endobj
+6 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 8 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 572 Tm
+12 TL
+()'
+(Electrum SIG Meeting Minutes 2021-05-19)'
+(========================================)'
+()'
+(1.  Current status -- electrum sever and client)'
+(2.  Discussion: release server once stable, any more work for client?)'
+(3.  Discussion: any specific tests needed?)'
+()'
+(==========================)'
+()'
+(-The Electrumx server is suffering crashes of unkown cause)'
+(        -the server is still useable since it usually takes about 25 hours to crash, or when new servers are brought)'
+( on-line)'
+(        -no proper error messages are given)'
+(        -the crashes began when we began turning "report services" on, which is enabled for server automatic discove)'
+(ry and peering)'
+(                -previously, a server peer list had to be manually maintained)'
+(        -The upstream kyupichan github server repo uses a custom module for peer networking which combines processes)'
+( into taks groups)'
+(                -when a process in a task group crahses, all tasks in the group fail, making error messages difficul)'
+(t to find)'
+()'
+(-The Electrum client changes for Ravencoin are being ported over to the code from spesmilo github repo instead of st)'
+(andard-error's repo)'
+(        -it is better architected)'
+(        -it has much better support for enhanced bitcoin functionality we may want in the future- atomic swaps, ligh)'
+(tening)'
+(        -it is on the SIG github account)'
+(        -HyperPeek reports that for large transactions, it is >10x faster than the previous version)'
+(        -it uses header Merkle branches)'
+(        -the old v3.8 standard-error client still works, but not with Ledger)'
+()'
+(Support from the Foundation for hosting Electrum servers was briefly discussed)'
+(        -Tron agreed to add HyperPeek's public key to a new Foundation server on Digital Ocean )'
+(        -will try running ravend/testnet + ravend/mainnet nodes + electrumx on two servers)'
+(        -In the meantime, HyperPeek continues to run a Electrumx server, but it is sometimes down in order to run ex)'
+(periments)'
+()'
+(The near-term focus will be on resolving the Electrumx server crashes, and then doing the first "release" which supp)'
+(orts Ravencoin asset viewing)'
+(        -Asset creation and transfer will be done later in a 2nd revision because that requires extra signing functi)'
+(onality)'
+()'
+(The rest of the meeting was spent trying to help user "meta stack" get Electrumx server and Bluewallet client to tal)'
+(k to each other in order to start the Moontree dev work.)'
+ET
+endstream
+endobj
+8 0 obj
+2544
+endobj
+9 0 obj
+<<
+/Type /Page
+/Parent 3 0 R
+/Resources 5 0 R
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11 0 R
+>>
+stream
+BT
+/F1 10 Tf
+1 0 0 1 50 572 Tm
+12 TL
+(        -Mobile Client "blue wallet")'
+(        -has Digital Ocean)'
+(        -trying to set up Electrum server v1.8 pulled from SIG)'
+(        -having problems connecting blue wallet)'
+(        -need to test with electrum wallet from kralverde server latest. SIG older but OK)'
+(        -maybe because blue wallet doesn't talk to public electrum servers)'
+(        -SSL://domain:port in config file)'
+(        -not broadcasting properly)'
+(        -config file looks good)'
+(        -firewall problems?)'
+(        -HyperPeek's electrum wallet won't connect either)'
+(        -connection refused error; ssl error)'
+(        -Kralverde will help get server up after resolving peer crashing issue)'
+(        -possibly windows-specific problem? QT-related?)'
+()'
+()'
+()'
+()'
+ET
+endstream
+endobj
+11 0 obj
+813
+endobj
+3 0 obj
+<<
+/Type /Pages
+/Count 2
+/MediaBox [ 0 0 792 612 ]
+/Kids [ 6 0 R 9 0 R ]
+>>
+endobj
+xref
+0 12
+0000000000 65535 f 0000000009 00000 n 0000000166 00000 n 0000004028 00000 n 0000000215 00000 n 0000000293 00000 n 0000000364 00000 n 0000000444 00000 n 0000003040 00000 n 0000003060 00000 n 0000003141 00000 n 0000004008 00000 n trailer
+<<
+/Size 12
+/Root 2 0 R
+/Info 1 0 R
+>>
+startxref
+4119
+%%EOF

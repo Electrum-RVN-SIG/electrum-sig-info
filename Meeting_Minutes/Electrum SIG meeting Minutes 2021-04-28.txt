@@ -1,0 +1,31 @@
+
+Electrum SIG meeting Minutes 2021-04-28
+======================================
+
+1.  Status of kralverdes current work \u2013 assets on server / client
+2.  Discussion: Create a new official release "as is" to support 3rd parties
+3.  How to get more people involved? Requirements?
+
+==========
+
+-The ElectrumX server has made good progress
+
+-Currently, for RVN (like for bitcoin), the server pushes changes to the client after the client registers
+-For assets, every 10 blocks the client sends requests to the server asking for client changes
+
+-Currently working on a client side asset database to speed up inquiries
+-There will eventually also be a server-side asset database
+	-right now electrumx is doing the RPC inquiries, but eventually should track its own
+
+-Currently working on getting assets viewable in the GUI. Next will work on server for creating and transferring assets.
+
+-Plan to move the latest version of the client to the SIG repo
+
+-Jeroz has agreed to build the MacOS version
+
+-There is currently a problem which sometimes causes DDOS failure. The client locks up because the server refuses to answer the client
+-This can be resolved by changing a parameter:
+	https://electrumx.readthedocs.io/en/latest/environment.html?highlight=max_sendRavencoin
+	-default is 1Mbytes. It should be increased to 10MBytes
+
+
